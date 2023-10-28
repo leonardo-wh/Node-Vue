@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: dbnode
+      POSTGRES_PASSWORD: dbnode
+      POSTGRES_DB: dbnode
+    ports:
+      - "5432:5432"
